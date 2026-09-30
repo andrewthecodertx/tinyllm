@@ -102,7 +102,7 @@ and a model with hundreds of thousands of parameters, there is far more model
 than data. The model memorizes the training text and stops generalizing. Training
 loss keeps falling toward zero while validation loss climbs. The script tracks
 the best validation checkpoint and stops when it stops improving, so the saved
-model is the good one — but the gap is the lesson.
+model is the good one, but the gap is the lesson.
 
 Run `info` and look at "parameters per training byte". When that number is above
 1, the model has more parameters than the corpus has bytes, and memorization is
@@ -144,7 +144,7 @@ checkpoints/      saved checkpoints (best validation loss)
 ```
 
 Checkpoints store the model weights, the config needed to rebuild the model, and
-the step and losses. Attention masks are not stored — they are derived from the
+the step and losses. Attention masks are not stored, they are derived from the
 config and rebuilt on load, so they never bloat the file.
 
 ## Credits
