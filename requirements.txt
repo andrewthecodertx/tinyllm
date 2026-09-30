@@ -1,0 +1,7 @@
+# PyTorch is the only dependency.
+#
+# On a machine without an NVIDIA GPU, install the CPU-only build instead --
+# it is roughly 200 MB rather than 3.5 GB:
+#
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch
+torch>=2.4
