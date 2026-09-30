@@ -3,7 +3,7 @@
 A byte-level Transformer language model trained from scratch, in one file.
 
 This is a teaching implementation. There is no tokenizer, no pretrained weights,
-no framework — just a decoder-only Transformer over raw bytes, written so you can
+no framework, just a decoder-only Transformer over raw bytes, written so you can
 read the whole thing top to bottom and see how the pieces fit.
 
 It is **not** a chatbot. It learns to continue text in the style of whatever you
@@ -20,7 +20,7 @@ python -m venv .venv
 ```
 
 If you do not have an NVIDIA GPU, install the CPU-only build of PyTorch. It is a
-much smaller download — roughly 200 MB instead of 3.5 GB of CUDA libraries you
+much smaller download, roughly 200 MB instead of 3.5 GB of CUDA libraries you
 cannot use:
 
 ```sh
