@@ -45,7 +45,7 @@ cannot use:
 ### `info`
 
 Reports corpus statistics and the parameter budget, without training anything.
-Run this first — it tells you whether your model is the right size for your data.
+Run this first, it tells you whether your model is the right size for your data.
 
 ### `train`
 
@@ -84,7 +84,7 @@ distribution, which is usually worse.
 
 ## The data
 
-`data/` holds five short notes on unrelated subjects — computing, astronomy,
+`data/` holds five short notes on unrelated subjects: computing, astronomy,
 gardening, cooking, and history. Together they are about 17 KB. That is
 deliberately small: small enough to train in minutes, and small enough that you
 can watch the model's behaviour change as it learns.
@@ -94,7 +94,7 @@ hundred kilobytes will teach it far more than 17 KB can.
 
 ## What to expect, and why
 
-The interesting part of this project is not the architecture — it is watching a
+The interesting part of this project is not the architecture, it is watching a
 small model deal with a small corpus.
 
 **Validation loss bottoms out early, then rises.** With ~15 KB of training text
@@ -129,7 +129,7 @@ That is the small-corpus effect again: extra depth adds capacity to memorize
 with, and there is nothing here to generalize to. The default is the two-block
 model. Add depth when you add data, not before.
 
-**Bytes, not tokens.** The vocabulary is 256 — every possible byte. That means no
+**Bytes, not tokens.** The vocabulary is 256, every possible byte. That means no
 tokenizer, no out-of-vocabulary problem, and any input works. It also means the
 model spends capacity learning to spell, and its context window of 128 is only
 about 128 characters. A real tokenizer would fit far more text into the same
